@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery & Resources - Prime NDT International</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- STICKY NAVBAR -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo-section">
+                <img src="images/logo.png" alt="Prime NDT International Logo">
+                <div class="logo-text">
+                    <h1>PRIME NDT</h1>
+                    <p>INTERNATIONAL</p>
+                </div>
+            </a>
+
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="testing.html">Testing</a>
+                <a href="projects.html">Projects</a>
+                <a href="gallery-resources.html" class="active">Gallery & Resources</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <button id="menu-btn" class="hamburger" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- MOBILE DROPDOWN -->
+    <div id="mobile-menu" class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="testing.html">Testing</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery-resources.html" class="active">Gallery & Resources</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- INNER PAGE HEADER -->
+    <header class="section-padding" style="background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), url('images/industrial-bg.png') center/cover; padding-top: 150px; padding-bottom: 70px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 10px;" class="reveal">Gallery & Resources</h1>
+            <p style="color: var(--accent-gold); font-family: 'Rajdhani', sans-serif; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;" class="reveal">Download Materials & Field Gallery</p>
+        </div>
+    </header>
+
+    <!-- STICKY SUB TAB SWITCHER -->
+    <div class="tab-navbar">
+        <div class="container">
+            <div class="tab-buttons">
+                <button onclick="switchTab('resources')" id="tab-resources" class="tab-btn active">Technical Resources</button>
+                <button onclick="switchTab('gallery')" id="tab-gallery" class="tab-btn">Media Gallery</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN MEDIA CONTENT SECTIONS -->
+    <main class="section-padding" style="padding-top: 60px;">
+        <div class="container">
+            
+            <!-- SECTION 1: RESOURCES GRID -->
+            <div id="resources-section" class="resources-grid reveal" style="display: grid;">
+                <!-- Resource 1 -->
+                <div class="resource-card">
+                    <span class="resource-icon">📁</span>
+                    <h3>Company Profile</h3>
+                    <p>A comprehensive overview of Prime NDT International's background, equipment inventories, credentials, and references.</p>
+                    <a href="#" class="btn btn-primary" onclick="alert('Downloading Prime NDT Corporate Profile...'); return false;">Download PDF</a>
+                </div>
+
+                <!-- Resource 2 -->
+                <div class="resource-card">
+                    <span class="resource-icon">📑</span>
+                    <h3>ASME Code Reference Sheet</h3>
+                    <p>Handy diagnostic reference guides summarizing ASME Section V and Section VIII welding acceptance criteria.</p>
+                    <a href="#" class="btn btn-primary" onclick="alert('Downloading ASME NDE Acceptance Chart...'); return false;">Download PDF</a>
+                </div>
+
+                <!-- Resource 3 -->
+                <div class="resource-card">
+                    <span class="resource-icon">🛡️</span>
+                    <h3>Safety Accreditations</h3>
+                    <p>Documentation certifying compliance with ISO 9712 NDT certifications and corporate safety codes.</p>
+                    <a href="#" class="btn btn-primary" onclick="alert('Downloading Safety Certificates Pack...'); return false;">Download ZIP</a>
+                </div>
+            </div>
+
+            <!-- SECTION 2: GALLERY GRID -->
+            <div id="gallery-section" class="gallery-grid reveal" style="display: none;">
+                <!-- Gallery Item 1 (Local Generated Asset) -->
+                <div class="gallery-item" onclick="alert('On-site Ultrasonic weld examination on pipeline.');">
+                    <img src="images/gallery1.png" alt="Ultrasonic Testing Weld Scanning">
+                    <div class="gallery-overlay">
+                        <h4>Pipeline Weld Scan</h4>
+                        <p>Ultrasonic Flaw Detection (UT) scan carried out on high-pressure pipelines.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 (Local Generated Asset) -->
+                <div class="gallery-item" onclick="alert('Refinery storage tank thickness gauging checks.');">
+                    <img src="images/gallery2.png" alt="Petrochemical Refinery Tank Farms">
+                    <div class="gallery-overlay">
+                        <h4>Petroleum Tank Inspection</h4>
+                        <p>Remaining wall thickness mapping on atmospheric storage tank shell plates.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" onclick="alert('High-temperature calibration blocks check.');">
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Engineers Calibrating Transducers">
+                    <div class="gallery-overlay">
+                        <h4>Device Calibration</h4>
+                        <p>Calibrating ultrasonic thickness gauges prior to refinery field scan lines.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" onclick="alert('Magnetic particle yokes active weld scanning.');">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Magnetic Particle Weld Inspections">
+                    <div class="gallery-overlay">
+                        <h4>Structural Magnetic Testing</h4>
+                        <p>Yoke magnet inspection (MT) performed on heavy building support framework.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" onclick="alert('Crude oil refinery towers weld audits.');">
+                    <img src="https://images.unsplash.com/photo-1581094651181-35942459ef62?auto=format&fit=crop&w=600&q=80" alt="Crude Oil Cracking Columns">
+                    <div class="gallery-overlay">
+                        <h4>Refinery Tower Integrity</h4>
+                        <p>High-end weld diagnostics during scheduled industrial plant shutdown turnarounds.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" onclick="alert('Liquid penetrant developer crack detection.');">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=600&q=80" alt="Liquid Dye Penetrant Check">
+                    <div class="gallery-overlay">
+                        <h4>Dye Penetrant Crack Isolation</h4>
+                        <p>Color-contrast developer checking surface porosity on safety support brackets.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Prime NDT Logo">
+                        <h3 style="margin-bottom:0; padding-bottom:0; display:inline-block; border:none; vertical-align:middle; margin-left:10px;">PRIME NDT</h3>
+                    </div>
+                    <p>Quality, Integrity & Trust. Prime NDT International provides high-end industrial testing solutions with certified personnel.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="testing.html">Testing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>NDT Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Ultrasonic Testing</a></li>
+                        <li><a href="services.html">Magnetic Particle</a></li>
+                        <li><a href="services.html">Liquid Penetrant</a></li>
+                        <li><a href="services.html">Visual Inspection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li><span>📍</span> Kalutara, Sri Lanka</li>
+                        <li><span>📞</span> +94 71 806 3301</li>
+                        <li><span>✉️</span> prime.ndtsl@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Prime NDT International. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Widgets -->
+    <div class="floating-widgets">
+        <a href="https://wa.me/94764147469" target="_blank" class="floating-btn whatsapp-btn" aria-label="Chat on WhatsApp">💬</a>
+        <button id="scroll-top-btn" class="floating-btn scroll-top-btn" aria-label="Scroll to top">▲</button>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
