@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Prime NDT International</title>
-    <!-- CSS Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- STICKY NAVBAR -->
     <nav>
         <div class="container">
             <a href="index.html" class="logo-section">
@@ -19,7 +20,6 @@
                     <p>INTERNATIONAL</p>
                 </div>
             </a>
-
             <div class="menu">
                 <a href="index.html">Home</a>
                 <a href="about.html" class="active">About Us</a>
@@ -29,16 +29,12 @@
                 <a href="gallery-resources.html">Gallery & Resources</a>
                 <a href="contact.html">Contact Us</a>
             </div>
-
             <button id="menu-btn" class="hamburger" aria-label="Toggle Navigation Menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
-    
-    <!-- MOBILE DROPDOWN -->
+
     <div id="mobile-menu" class="mobile-menu">
         <a href="index.html">Home</a>
         <a href="about.html" class="active">About Us</a>
@@ -49,46 +45,33 @@
         <a href="contact.html">Contact Us</a>
     </div>
 
-    <!-- INNER PAGE HEADER -->
-    <header class="section-padding" style="background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), url('images/industrial-bg.png') center/cover; padding-top: 150px; padding-bottom: 70px; text-align: center;">
+    <!-- ABOUT US (screenshot style) -->
+    <section class="about-intro">
         <div class="container">
-            <h1 style="font-size: 3rem; margin-bottom: 10px;" class="reveal">About Our Company</h1>
-            <p style="color: var(--accent-gold); font-family: 'Rajdhani', sans-serif; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;" class="reveal">Quality, Integrity & Trust</p>
-        </div>
-    </header>
-
-    <!-- COMPANY PROFILE SECTION -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="grid-2" style="align-items: center;">
-                <div class="reveal">
-                    <img src="images/about-img.png" alt="Industrial Welding NDT Inspection" style="border-radius: 16px; border: 1px solid var(--glass-border); box-shadow: var(--card-shadow);">
+            <div class="about-intro-grid">
+                <div class="about-intro-img reveal">
+                    <img src="images/about-img.png" alt="Prime NDT International Inspector">
                 </div>
-                <div class="reveal">
-                    <h2 style="font-size: 2.2rem; margin-bottom: 20px; line-height: 1.2;">Your Trusted Partner In Industrial NDT Auditing</h2>
-                    <p style="color: var(--text-gray); margin-bottom: 20px;">
-                        PRIME NDT INTERNATIONAL is a premier commercial testing organization, providing high-end industrial testing solutions and engineering inspections. We cater to major operations, including petroleum refinery facilities, chemical plants, pipelines, and civil fabrications.
+                <div class="about-intro-text reveal">
+                    <h2>"ABOUT US"</h2>
+                    <h3>Prime NDT International</h3>
+                    <p>
+                        At Prime NDT, we deliver professional inspection services that ensure safety, accuracy, and reliability across every project we undertake.
                     </p>
-                    <p style="color: var(--text-gray); margin-bottom: 25px;">
-                        Backed by international certifications (including ASNT/ISO guidelines), our operations deliver absolute accuracy. We ensure that critical components satisfy code thresholds, helping operators identify weld flaws, corrosion, cracking, or wall degradation before they lead to structural failure.
+                    <p>
+                        With a commitment to excellence, we provide precise and dependable Non-Destructive Testing (NDT) solutions that help our clients maintain the highest standards of quality and compliance.
                     </p>
-                    
-                    <div class="about-features">
-                        <div class="feature-box">
-                            <span class="feature-icon">🛡️</span>
-                            <div class="feature-info">
-                                <h4>Expert NDT Engineers</h4>
-                                <p>Technicians with years of practical experience certified to Level II & III standards.</p>
-                            </div>
-                        </div>
-                        <div class="feature-box">
-                            <span class="feature-icon">⚙️</span>
-                            <div class="feature-info">
-                                <h4>State-Of-The-Art Equipment</h4>
-                                <p>We employ calibrated flaw detectors, ultrasonic gauges, and high-sensitivity yokes.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="about-includes">UT, MT, VT, ET and PT for Industry includes.</p>
+                    <ul class="about-list">
+                        <li>Structural Steel Fabrication</li>
+                        <li>Power Plants</li>
+                        <li>Boilers</li>
+                        <li>Lifting Equipment</li>
+                        <li>Manufacturing</li>
+                        <li>Mining and Construction</li>
+                        <li>Oil and Gas</li>
+                        <li>Coal and Hydro Power Generation</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -117,14 +100,13 @@
         </div>
     </section>
 
-    <!-- MAJOR INDUSTRIES WE SERVE -->
+    <!-- INDUSTRIES -->
     <section class="section-padding">
         <div class="container">
             <div class="section-header reveal">
                 <h2>Industries We Serve</h2>
                 <p>Delivering heavy industrial audits across sectors requiring strict safety thresholds.</p>
             </div>
-            
             <div class="grid-4" style="text-align: center;">
                 <div class="service-card reveal" style="padding: 30px 20px; align-items: center;">
                     <div style="font-size: 3rem; margin-bottom: 15px;">🛢️</div>
@@ -144,13 +126,12 @@
                 <div class="service-card reveal" style="padding: 30px 20px; align-items: center;">
                     <div style="font-size: 3rem; margin-bottom: 15px;">⚡</div>
                     <h3 style="font-size: 1.15rem; margin-bottom: 10px; text-align: center;">Power Generation</h3>
-                    <p style="font-size: 0.85rem; text-align: center; margin-bottom: 0;">Boilers, steam lines, turbines, hydroelectric penstocks, and support structures.</p>
+                    <p style="font-size: 0.85rem; text-align: center; margin-bottom: 0;">Boilers,Power plants, steam lines, turbines, hydroelectric penstocks, and support structures.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -182,8 +163,8 @@
                 <div class="footer-col">
                     <h3>Contact Info</h3>
                     <ul class="footer-contact">
-                        <li><span>📍</span> Kalutara, Sri Lanka</li>
-                        <li><span>📞</span> +94 71 806 3301</li>
+                        <li><span>📍</span> Aluthgama Rd,Yatadolawatta,Mathugama</li>
+                        <li><span>📞</span> <a href="tel:+94718063301">+94 71 806 3301</a></li>
                         <li><span>✉️</span> prime.ndtsl@gmail.com</li>
                     </ul>
                 </div>
@@ -194,13 +175,12 @@
         </div>
     </footer>
 
-    <!-- Floating Widgets -->
     <div class="floating-widgets">
-        <a href="https://wa.me/94764147469" target="_blank" class="floating-btn whatsapp-btn" aria-label="Chat on WhatsApp">💬</a>
-        <button id="scroll-top-btn" class="floating-btn scroll-top-btn" aria-label="Scroll to top">▲</button>
+        <a href="https://wa.me/94718063301?text=Hello%20Prime%20NDT%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener" class="floating-btn whatsapp-btn" aria-label="Chat on WhatsApp">
+            <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff" aria-hidden="true"><path d="M16.003 3C8.83 3 3 8.83 3 16c0 2.29.6 4.52 1.74 6.49L3 29l6.7-1.72A12.94 12.94 0 0 0 16 29c7.17 0 13-5.83 13-13S23.17 3 16.003 3zm0 23.7c-1.95 0-3.86-.53-5.53-1.52l-.4-.24-3.98 1.02 1.06-3.88-.26-.4A10.67 10.67 0 0 1 5.3 16c0-5.9 4.8-10.7 10.7-10.7S26.7 10.1 26.7 16s-4.8 10.7-10.697 10.7zm5.87-8c-.32-.16-1.9-.94-2.2-1.04-.3-.11-.5-.16-.72.16-.22.32-.83 1.04-1.02 1.26-.19.21-.38.24-.7.08-.32-.16-1.36-.5-2.59-1.6-.96-.85-1.6-1.9-1.79-2.22-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.1-.21.05-.4-.03-.56-.08-.16-.72-1.74-.99-2.38-.26-.62-.52-.54-.72-.55h-.62c-.21 0-.56.08-.85.4-.3.32-1.12 1.1-1.12 2.68s1.15 3.1 1.31 3.32c.16.21 2.26 3.45 5.48 4.84.77.33 1.37.53 1.83.68.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.14-.3-.22-.62-.38z"/></svg>
+        </a>
     </div>
 
-    <!-- JS Scripts -->
     <script src="script.js"></script>
 </body>
 </html>

@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing & Inspection Standards - Prime NDT International</title>
-    <!-- CSS Stylesheet -->
+    <title>Testings - Prime NDT International</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- STICKY NAVBAR -->
     <nav>
         <div class="container">
             <a href="index.html" class="logo-section">
@@ -19,7 +20,6 @@
                     <p>INTERNATIONAL</p>
                 </div>
             </a>
-
             <div class="menu">
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
@@ -29,16 +29,12 @@
                 <a href="gallery-resources.html">Gallery & Resources</a>
                 <a href="contact.html">Contact Us</a>
             </div>
-
             <button id="menu-btn" class="hamburger" aria-label="Toggle Navigation Menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
-    
-    <!-- MOBILE DROPDOWN -->
+
     <div id="mobile-menu" class="mobile-menu">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -49,136 +45,89 @@
         <a href="contact.html">Contact Us</a>
     </div>
 
-    <!-- INNER PAGE HEADER -->
-    <header class="section-padding" style="background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), url('images/industrial-bg.png') center/cover; padding-top: 150px; padding-bottom: 70px; text-align: center;">
+    <!-- TESTINGS -->
+    <section class="testing-section">
         <div class="container">
-            <h1 style="font-size: 3rem; margin-bottom: 10px;" class="reveal">Testing & Quality Codes</h1>
-            <p style="color: var(--accent-gold); font-family: 'Rajdhani', sans-serif; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;" class="reveal">Strict Adherence to International Standards</p>
-        </div>
-    </header>
+            <h2 class="testing-title reveal">Testings</h2>
 
-    <!-- TESTING PROCEDURES TIMELINE -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2>Our Inspection Workflow</h2>
-                <p>Every industrial NDT procedure follows a structured quality control protocol to guarantee valid results.</p>
-            </div>
+            <div class="testing-wrap">
+                <!-- LEFT: test list -->
+                <div class="test-list">
 
-            <div class="process-timeline">
-                <!-- Step 1 -->
-                <div class="process-step reveal">
-                    <div class="process-number">01</div>
-                    <div class="process-body">
-                        <h3>Preparation & Visual Calibration</h3>
-                        <p>The inspection surface is cleaned of rust, scaling, paint, and slag to ensure clean sensor contact. Inspectors carry out a primary visual check (VT) to identify obvious surface deformations.</p>
+                    <div class="test-item reveal">
+                        <div class="test-text">
+                            <h3>Liquid Penetrant Inspection (PT)</h3>
+                            <p>Color Contrast and Ultraviolet Examination of:</p>
+                            <ul><li>Welds</li><li>Forgings</li><li>Castings</li></ul>
+                        </div>
+                        <div class="test-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M38 10l16 16-10 10-16-16z" fill="#fff"/><path d="M24 24L10 38l8 8 14-14"/><path d="M8 54l10-8"/></svg>
+                        </div>
                     </div>
+
+                    <div class="test-item reveal">
+                        <div class="test-text">
+                            <h3>Magnetic Particle Inspection (MT)</h3>
+                            <p>Surface and subsurface inspection of ferromagnetic materials.</p>
+                            <ul><li>Welds</li><li>Forgings</li><li>Castings</li></ul>
+                        </div>
+                        <div class="test-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M16 36V22a16 16 0 0 1 32 0v14"/><path d="M16 36h8v-12a8 8 0 0 1 16 0v12h8"/><rect x="10" y="42" width="44" height="12" rx="2"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="test-item reveal">
+                        <div class="test-text">
+                            <h3>Ultrasonic Inspection (UT)</h3>
+                            <p>Ultrasonic testing for forgings, castings, and welded components to detect internal defects and ensure structural integrity.</p>
+                        </div>
+                        <div class="test-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M14 8l14 14"/><path d="M10 14l8-8"/><path d="M24 18l8 8-6 6-8-8z" fill="#fff"/><path d="M6 46h52"/><path d="M34 34c4 2 6 6 6 10M42 32c6 3 9 8 9 14"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="test-item reveal">
+                        <div class="test-text">
+                            <h3>Ultrasonic Thickness Gauging (UTG)</h3>
+                            <p>Ultrasonic thickness measurement and lamination scanning of rolled plates, helping to maintain quality and safety standards.</p>
+                        </div>
+                        <div class="test-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="34" width="48" height="18" rx="2"/><path d="M32 8v26"/><path d="M26 14l6-6 6 6"/><path d="M26 28l6 6 6-6"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="test-item reveal">
+                        <div class="test-text">
+                            <h3>Visual Testing (VT)</h3>
+                            <p>Assessing weld integrity, structural soundness, and other visual aspects.</p>
+                        </div>
+                        <div class="test-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24c6-10 14-14 26-14s20 4 26 14c-6 10-14 14-26 14S12 34 6 24z"/><circle cx="32" cy="24" r="7"/><path d="M26 56l14-18"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="test-item reveal">
+                        <div class="test-text">
+                            <h3>Hardness Testing (HT)</h3>
+                            <p>Hardness Testing: Ensuring material durability and performance.</p>
+                        </div>
+                        <div class="test-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h28v14L32 42 18 22z" fill="#fff"/><path d="M8 54h48"/></svg>
+                        </div>
+                    </div>
+
                 </div>
 
-                <!-- Step 2 -->
-                <div class="process-step reveal">
-                    <div class="process-number">02</div>
-                    <div class="process-body">
-                        <h3>NDT Scanning & Measurement</h3>
-                        <p>Our engineers perform high-end scan lines using calibrated equipment (e.g. Ultrasonic gauges, yoke magnets, penetrant dyes). All signals, ultrasonic waves, or dye indications are cross-verified.</p>
-                    </div>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="process-step reveal">
-                    <div class="process-number">03</div>
-                    <div class="process-body">
-                        <h3>Data Evaluation & Fault Isolation</h3>
-                        <p>Recorded metrics are mapped against the reference fabrication codes (ASME Sec VIII, API 650, etc.). Flaw locations are isolated, classified, and sizing indicators are marked on-site.</p>
-                    </div>
-                </div>
-
-                <!-- Step 4 -->
-                <div class="process-step reveal">
-                    <div class="process-number">04</div>
-                    <div class="process-body">
-                        <h3>Certified Documentation & Reports</h3>
-                        <p>We generate detailed inspection worksheets complete with CAD mapping of defect locations, ultrasonic thickness grids, and clear recommendations signed off by certified NDT Level II/III inspectors.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- STANDARDS & COMPLIANCE TABLE -->
-    <section class="section-padding" style="background-color: var(--secondary-navy);">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2>Compliance Codes & Guidelines</h2>
-                <p>Our inspections conform strictly to major international fabrication and safety associations.</p>
-            </div>
-
-            <div class="table-container reveal">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Standard Body</th>
-                            <th>Relevant Codes</th>
-                            <th>Application Scope</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>ASME</strong> (American Society of Mechanical Engineers)</td>
-                            <td>Section V (NDE), Section VIII (Boilers & Pressure Vessels), B31.1 / B31.3</td>
-                            <td>Power boilers, pressure piping, process pipe welding audits.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>API</strong> (American Petroleum Institute)</td>
-                            <td>API 570 (Piping), API 650 (Storage Tanks), API 653 (Tank Inspection)</td>
-                            <td>Refinery pipelines, bulk chemical terminals, atmospheric steel tanks.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>ASTM</strong> (American Society for Testing & Materials)</td>
-                            <td>E165 (Penetrant), E709 (Magnetic Particle), E114 (Ultrasonic)</td>
-                            <td>Detailed testing process calibrations and material classification.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>AWS</strong> (American Welding Society)</td>
-                            <td>D1.1 / D1.1M (Structural Welding Code - Steel)</td>
-                            <td>High-rise building joints, structural frameworks, steel civil infrastructures.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>ISO</strong> (International Organization for Standardization)</td>
-                            <td>ISO 9712 (NDT Personnel Certification), ISO 17640 (Ultrasonic Weld Examination)</td>
-                            <td>Operational technician credentials and general testing methodologies.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <!-- QUALITY CONTROL STATEMENT -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="grid-2" style="align-items: center;">
-                <div class="reveal">
-                    <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Equipment Calibration & Reliability</h2>
-                    <p style="color: var(--text-gray); margin-bottom: 20px;">
-                        To guarantee reliable inspection reports, Prime NDT International enforces strict calibration regimes. All transducers, thickness sensors, magnetic yokes, and ultraviolet lamps are certified periodically by accredited laboratories.
-                    </p>
-                    <p style="color: var(--text-gray); margin-bottom: 20px;">
-                        We adhere to international health, safety, and environment (HSE) codes. Radiographic source isotopes are handled in secure isolation under licensed radiation safety officers, keeping public risk levels at absolute zero.
-                    </p>
-                    <a href="gallery-resources.html" class="btn btn-gold-outline">Download Safety Accreditations</a>
-                </div>
-                <div class="reveal">
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
-                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=500&q=80" alt="Inspection Calibration" style="border-radius: 12px; height: 200px; object-fit: cover;">
-                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=500&q=80" alt="Metallurgy Testing" style="border-radius: 12px; height: 200px; object-fit: cover;">
-                    </div>
+                <!-- RIGHT: images -->
+                <div class="test-images">
+                    <img class="reveal" src="images/testing-pt.jpg" alt="Liquid Penetrant Inspection">
+                    <img class="reveal" src="images/testing-ut.jpg" alt="Ultrasonic Inspection">
+                    <img class="reveal" src="images/testing-vt.jpg" alt="Visual Testing">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -201,17 +150,17 @@
                 <div class="footer-col">
                     <h3>NDT Services</h3>
                     <ul class="footer-links">
-                        <li><a href="services.html">Ultrasonic Testing</a></li>
+                        <li><a href="services.html">Ultrasonic Scanning</a></li>
                         <li><a href="services.html">Magnetic Particle</a></li>
+                        <li><a href="services.html">Thickness Gauging</a></li>
                         <li><a href="services.html">Liquid Penetrant</a></li>
-                        <li><a href="services.html">Visual Inspection</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h3>Contact Info</h3>
                     <ul class="footer-contact">
-                        <li><span>📍</span> Kalutara, Sri Lanka</li>
-                        <li><span>📞</span> +94 71 806 3301</li>
+                        <li><span>📍</span> Aluthgama Rd,Yatadolawatta,Mathugama</li>
+                        <li><span>📞</span> <a href="tel:+94718063301">+94 71 806 3301</a></li>
                         <li><span>✉️</span> prime.ndtsl@gmail.com</li>
                     </ul>
                 </div>
@@ -222,13 +171,6 @@
         </div>
     </footer>
 
-    <!-- Floating Widgets -->
-    <div class="floating-widgets">
-        <a href="https://wa.me/94764147469" target="_blank" class="floating-btn whatsapp-btn" aria-label="Chat on WhatsApp">💬</a>
-        <button id="scroll-top-btn" class="floating-btn scroll-top-btn" aria-label="Scroll to top">▲</button>
-    </div>
-
-    <!-- JS Scripts -->
     <script src="script.js"></script>
 </body>
 </html>

@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services - Prime NDT International</title>
-    <!-- CSS Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- STICKY NAVBAR -->
     <nav>
         <div class="container">
             <a href="index.html" class="logo-section">
@@ -19,7 +20,6 @@
                     <p>INTERNATIONAL</p>
                 </div>
             </a>
-
             <div class="menu">
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
@@ -29,16 +29,12 @@
                 <a href="gallery-resources.html">Gallery & Resources</a>
                 <a href="contact.html">Contact Us</a>
             </div>
-
             <button id="menu-btn" class="hamburger" aria-label="Toggle Navigation Menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
-    
-    <!-- MOBILE DROPDOWN -->
+
     <div id="mobile-menu" class="mobile-menu">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -49,7 +45,6 @@
         <a href="contact.html">Contact Us</a>
     </div>
 
-    <!-- INNER PAGE HEADER -->
     <header class="section-padding" style="background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), url('images/industrial-bg.png') center/cover; padding-top: 150px; padding-bottom: 70px; text-align: center;">
         <div class="container">
             <h1 style="font-size: 3rem; margin-bottom: 10px;" class="reveal">Our Inspection Services</h1>
@@ -57,106 +52,74 @@
         </div>
     </header>
 
-    <!-- CLIENT PARTNERS MARQUEE -->
-    <section class="marquee-container">
-        <div class="marquee-content">
-            <span>CPTL (Ceylon Petroleum Storage Terminals)</span>
-            <span>LIOC (Lanka IOC PLC)</span>
-            <span>CPC (Ceylon Petroleum Corporation)</span>
-            <span>PRIME NDT INTERNATIONAL</span>
-            <!-- Duplicate for seamless scroll -->
-            <span>CPTL (Ceylon Petroleum Storage Terminals)</span>
-            <span>LIOC (Lanka IOC PLC)</span>
-            <span>CPC (Ceylon Petroleum Corporation)</span>
-            <span>PRIME NDT INTERNATIONAL</span>
+    <!-- CLIENT LOGOS -->
+    <section class="client-strip">
+        <div class="container">
+            <div class="client-logos">
+                <div class="client-logo"><img src="images/clients/yokohama.png" alt="Yokohama" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span>YOKOHAMA</span></div>
+                <div class="client-logo"><img src="images/clients/south.png" alt="South Asia (Pvt) Ltd" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span>South Asia (PVT) LTD</span></div>
+                <div class="client-logo"><img src="images/clients/litro.png" alt="Litro Gas" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span>LITRO GAS</span></div>
+                <div class="client-logo"><img src="images/clients/hayleys.png" alt="Hayleys PLC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span>HAYLEYS PLC</span></div>
+                <div class="client-logo"><img src="images/clients/tantri.png" alt="Tantri Trailer" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span>Tantri Trailer</span></div>
+                <div class="client-logo"><img src="images/clients/Lsc.png" alt="LSC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span>LSC</span></div>
+                <div class="client-logo"><img src="images/clients/Lakdhanavi-Limited.png" alt="Lakdhanavi-Limited" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span>Lakdhanavi-Limited</span></div>
+                <div class="client-logo"><img src="images/clients/kothmale.png" alt="Kothmale" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span>Kothmale</span></div>
+            </div>
         </div>
     </section>
 
-    <!-- SERVICES LISTING SECTION -->
+    <!-- SERVICES -->
     <section class="section-padding">
         <div class="container">
             <div class="section-header reveal">
-                <h2>Our Technical Capabilities</h2>
-                <p>Ensuring complete safety compliance through high-end volumetric, surface, and visual inspection methods.</p>
+                <h2>Our Services</h2>
+                <p>Ensuring complete safety compliance through high-end volumetric and surface inspection methods.</p>
             </div>
 
-            <div class="grid-3 services-grid">
-                <!-- Service 1: UT -->
-                <div class="service-card reveal">
-                    <div>
-                        <div class="service-icon">
-                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-                        </div>
-                        <h3>Ultrasonic Testing (UT)</h3>
-                        <p>High-frequency sound waves are directed into the material to identify internal volumetric defects (e.g. slag inclusions, cracking, porosity) in welds, castings, and heavy forged machinery elements.</p>
+            <div class="grid-4 svc-grid">
+                <!-- UT -->
+                <div class="svc-card reveal">
+                    <div class="svc-icon-box">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M14 8l14 14"/><path d="M10 14l8-8"/><path d="M24 18l8 8-6 6-8-8z" fill="#fff"/><path d="M6 46h52"/><path d="M34 34c4 2 6 6 6 10M42 32c6 3 9 8 9 14"/></svg>
                     </div>
-                    <a href="contact.html" class="service-link">Request Quote ➔</a>
+                    <h3>Ultrasonic Scanning (UT)</h3>
+                    <p>Ultrasonic testing for forgings, castings, and welded components to detect internal defects and ensure structural integrity.</p>
                 </div>
 
-                <!-- Service 2: RT -->
-                <div class="service-card reveal">
-                    <div>
-                        <div class="service-icon">
-                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-                        </div>
-                        <h3>Radiographic Testing (RT)</h3>
-                        <p>Utilizing X-ray or Gamma-ray sources to capture internal shadow images of pipelines and pressurized vessels, registering internal inconsistencies on photographic film or digital sensors.</p>
+                <!-- MT -->
+                <div class="svc-card reveal">
+                    <div class="svc-icon-box">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M16 36V22a16 16 0 0 1 32 0v14"/><path d="M16 36h8v-12a8 8 0 0 1 16 0v12h8"/><rect x="10" y="42" width="44" height="12" rx="2"/><path d="M20 48h6M30 48l4-3 4 3"/></svg>
                     </div>
-                    <a href="contact.html" class="service-link">Request Quote ➔</a>
+                    <h3>Magnetic Particle Testing (MT)</h3>
+                    <p>Surface and subsurface inspection of ferromagnetic materials.</p>
                 </div>
 
-                <!-- Service 3: MT -->
-                <div class="service-card reveal">
-                    <div>
-                        <div class="service-icon">
-                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                        </div>
-                        <h3>Magnetic Particle Testing (MT)</h3>
-                        <p>Using electromagnetic yokes to induce magnetic flux lines inside ferromagnetic steel. Magnetic particles are applied to expose surface cracks, seams, and near-surface structural discontinuities.</p>
+                <!-- UTG -->
+                <div class="svc-card reveal">
+                    <div class="svc-icon-box">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="30" width="48" height="22" rx="2"/><path d="M32 8v22"/><path d="M26 14l6-6 6 6"/><path d="M26 24l6 6 6-6"/><path d="M16 40h8M28 40h8M40 40h8"/></svg>
                     </div>
-                    <a href="contact.html" class="service-link">Request Quote ➔</a>
+                    <h3>Ultrasonic Thickness Gauging</h3>
+                    <p>Accurate wall thickness measurement of pipelines, tanks, and vessels to monitor corrosion and determine remaining service life.</p>
                 </div>
 
-                <!-- Service 4: PT -->
-                <div class="service-card reveal">
-                    <div>
-                        <div class="service-icon">
-                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
-                        </div>
-                        <h3>Liquid Penetrant Testing (PT)</h3>
-                        <p>Applying high-visibility liquid dye to non-porous welds, allowing capillary action to draw dye into open fractures. A developer is then used to draw out the dye, highlighting flaws visually.</p>
+                <!-- PT -->
+                <div class="svc-card reveal">
+                    <div class="svc-icon-box">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M38 10l16 16-10 10-16-16z" fill="#fff"/><path d="M24 24L10 38l8 8 14-14"/><path d="M8 54l10-8"/><path d="M44 46c0 4-3 8-3 8s-3-4-3-8a3 3 0 0 1 6 0z"/></svg>
                     </div>
-                    <a href="contact.html" class="service-link">Request Quote ➔</a>
+                    <h3>Liquid Penetrant Testing (PT)</h3>
+                    <p>Color contrast and ultraviolet examination for locating surface-breaking defects.</p>
                 </div>
+            </div>
 
-                <!-- Service 5: VT -->
-                <div class="service-card reveal">
-                    <div>
-                        <div class="service-icon">
-                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-                        </div>
-                        <h3>Visual Inspection (VT)</h3>
-                        <p>Essential primary testing method featuring detailed visual analysis of welds, structural surfaces, mechanical corrosion profiles, and misalignment checks carried out by experienced inspectors.</p>
-                    </div>
-                    <a href="contact.html" class="service-link">Request Quote ➔</a>
-                </div>
-
-                <!-- Service 6: UTG -->
-                <div class="service-card reveal">
-                    <div>
-                        <div class="service-icon">
-                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/></svg>
-                        </div>
-                        <h3>Ultrasonic Thickness Gauging (UTG)</h3>
-                        <p>Measuring the thickness of metal walls in pipelines, storage silos, and vessel shells. It calculates corrosion rates and determines the active life cycle of components without destructive cuts.</p>
-                    </div>
-                    <a href="contact.html" class="service-link">Request Quote ➔</a>
-                </div>
+            <div style="text-align: center; margin-top: 50px;" class="reveal">
+                <a href="contact.html" class="btn btn-primary">Request A Quote</a>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -179,17 +142,17 @@
                 <div class="footer-col">
                     <h3>NDT Services</h3>
                     <ul class="footer-links">
-                        <li><a href="services.html">Ultrasonic Testing</a></li>
+                        <li><a href="services.html">Ultrasonic Scanning</a></li>
                         <li><a href="services.html">Magnetic Particle</a></li>
+                        <li><a href="services.html">Thickness Gauging</a></li>
                         <li><a href="services.html">Liquid Penetrant</a></li>
-                        <li><a href="services.html">Visual Inspection</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h3>Contact Info</h3>
                     <ul class="footer-contact">
-                        <li><span>📍</span> Kalutara, Sri Lanka</li>
-                        <li><span>📞</span> +94 71 806 3301</li>
+                        <li><span>📍</span> Aluthgama Rd,Yatadolawatta,Mathugama</li>
+                        <li><span>📞</span> <a href="tel:+94718063301">+94 71 806 3301</a></li>
                         <li><span>✉️</span> prime.ndtsl@gmail.com</li>
                     </ul>
                 </div>
@@ -200,13 +163,7 @@
         </div>
     </footer>
 
-    <!-- Floating Widgets -->
-    <div class="floating-widgets">
-        <a href="https://wa.me/94764147469" target="_blank" class="floating-btn whatsapp-btn" aria-label="Chat on WhatsApp">💬</a>
-        <button id="scroll-top-btn" class="floating-btn scroll-top-btn" aria-label="Scroll to top">▲</button>
-    </div>
-
-    <!-- JS Scripts -->
+    <!-- (No WhatsApp / scroll-top icons on this page) -->
     <script src="script.js"></script>
 </body>
 </html>
