@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // 2. MOBILE MENU & HAMBURGER TOGGLE
     const menuBtn = document.getElementById("menu-btn");
     const mobileMenu = document.getElementById("mobile-menu");
-    
+
     if (menuBtn && mobileMenu) {
         menuBtn.addEventListener("click", function (e) {
             e.stopPropagation();
@@ -89,26 +89,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // 5. CONTACT FORM HANDLING
-    const contactForm = document.querySelector(".contact-form-panel form");
-    if (contactForm) {
-        contactForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-            
-            // Basic UI loading representation
-            const submitBtn = contactForm.querySelector("button[type='submit']");
-            const originalText = submitBtn.innerText;
-            submitBtn.innerText = "Sending Message...";
-            submitBtn.disabled = true;
-            
-            setTimeout(() => {
-                // Display modal success pop-up
-                showToast("Message Sent! Thank you for contacting Prime NDT. We will get back to you shortly.", "success");
-                contactForm.reset();
-                submitBtn.innerText = originalText;
-                submitBtn.disabled = false;
-            }, 1200);
-        });
-    }
+    // const contactForm = document.querySelector(".contact-form-panel form");
+    // if (contactForm) {
+    //     contactForm.addEventListener("submit", function (e) {
+    //         // e.preventDefault();
+
+    //         // Basic UI loading representation
+    //         const submitBtn = contactForm.querySelector("button[type='submit']");
+    //         const originalText = submitBtn.innerText;
+    //         submitBtn.innerText = "Sending Message...";
+    //         submitBtn.disabled = true;
+
+    //         setTimeout(() => {
+    //             // Display modal success pop-up
+    //             showToast("Message Sent! Thank you for contacting Prime NDT. We will get back to you shortly.", "success");
+    //             contactForm.reset();
+    //             submitBtn.innerText = originalText;
+    //             submitBtn.disabled = false;
+    //         }, 1200);
+    //     });
+    // }
 
     // Toast Alert Helper
     function showToast(message, type = "success") {
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
         toast.innerText = message;
 
         document.body.appendChild(toast);
-        
+
         // Trigger transition
         setTimeout(() => {
             toast.style.transform = "translateX(-50%) translateY(0)";
