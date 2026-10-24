@@ -109,6 +109,49 @@ document.addEventListener("DOMContentLoaded", function () {
     //         }, 1200);
     //     });
     // }
+    const form = document.getElementById("contact-form");
+    const btn = document.getElementById("submit-btn");
+    const captchaError = document.getElementById("captcha-error");
+
+    form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        // Block submission until the captcha is solved
+        const formData = new FormData(form);
+        const captchaToken = formData.get("h-captcha-response");
+        if (!captchaToken) {
+            captchaError.hidden = false;
+            showToast("Please complete the captcha before submitting.", "error");
+            return;
+        }
+        captchaError.hidden = true;
+
+        btn.disabled = true;
+        const originalText = btn.textContent;
+        btn.textContent = "Sending...";
+
+        try {
+            const response = await fetch(form.action, {
+                method: "POST",
+                headers: { "Accept": "application/json" },
+                body: formData
+            });
+            const data = await response.json();
+
+            if (response.ok && data.success) {
+                showToast("Thank you! Your message has been sent. We will get back to you soon.", "success");
+                form.reset();
+                if (window.hcaptcha) hcaptcha.reset();
+            } else {
+                throw new Error(data.message || "Submission failed");
+            }
+        } catch (err) {
+            showToast("Something went wrong. Please email prime.ndtsl@gmail.com or use WhatsApp.", "error");
+        } finally {
+            btn.disabled = false;
+            btn.textContent = originalText;
+        }
+    });
 
     // Toast Alert Helper
     function showToast(message, type = "success") {
